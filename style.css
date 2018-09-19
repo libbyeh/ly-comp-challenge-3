@@ -1,0 +1,742 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-areas:
+    'sidemenu main'
+    'sidemenu main'
+    'sidemenu main'
+    'sidemenu main';
+}
+
+ul {
+  list-style: none;
+}
+
+
+/*Aside Styling*/
+.sidemenu {
+  background-color: #374050;
+  grid-area: sidemenu;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidemenu-section {
+  font-size: .7em;
+  color: #a2acbd;
+  line-height: 36px;
+  font-weight: bold;
+  margin: 12px auto;
+}
+
+.home li, 
+.admin-side li,
+.categories li {
+  padding-left: 20px;
+  border: transparent;
+}
+
+.home li:hover, 
+.admin-side li:hover,
+.categories li:hover {
+  border-left: 2px solid #0BC7F2;
+  background-color: #313948;
+  color: #FFF;
+}
+
+.picture-section {
+  height: 126px; 
+}
+
+.picture {
+   background-image: url('images/leon.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 50%;
+   height: 70px;
+   left: 62px; 
+   position: relative;
+   top: 50px;
+   width: 70px;
+}
+
+.acct-name {
+  color: #A2A4A7;
+  font-size: .95em;
+  height:50px;
+  padding-left: 32px;
+  padding-top: 5px;
+}
+
+.aside-icons {
+  font-size: 12px;
+  width: 18px;
+}
+
+p {
+  color: #67748b;
+  font-size: 1em;
+  padding-left: 20px;
+}
+
+hr {
+  border: .5px solid #11202B;
+}
+
+/*Main Section Styling*/
+.main {
+  grid-area: main;
+  background-color: #ecf1f5;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*Nav Styling*/
+nav {
+  background-color: #FFF;
+  border-bottom: 1px solid #D4D6D8;
+  display: grid;
+  grid-template-columns: 4rem 1fr 4rem 4rem 4rem;
+  height: 60px;
+}
+
+.nav-search {
+  border-left: .5px solid #D4D6D8;
+  padding-left: 10px;
+}
+
+.search-input {
+  border-color: transparent;
+  padding-top: 20px;
+  width: 300px;
+}
+
+.fa-search {
+  color: #8D8F92;
+}
+
+.fa-caret-left {
+  border: transparent;
+  color: #0BC7F2;
+}
+
+.fa-caret-left:hover {
+  border: transparent;
+  color: #FFF;
+}
+
+.hamburger,
+.fa-user,
+.fa-calendar-alt,
+.fa-th {
+  border-left: .5px solid #D4D6D8;
+  color: #8D8F92;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.hamburger:hover,
+.fa-calendar-alt:hover,
+.fa-th:hover,
+.fa-user:hover {
+  background-color: #0BC7F2;
+  color: #FFF;
+}
+
+
+/*Header Section Styling*/
+.header {
+  background-color: #fff;
+  padding: 10px 0px 10px 0px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 42px;
+}
+
+.job-nav-buttons {
+  color: #8D8F92; 
+  font-size: 15px;
+  margin: 40px;
+}
+
+.job-icons {
+  border-radius: 50%;
+  border: 1px solid #D4D6D8;
+  font-size: 12px;
+  height: 32px;
+  margin: 4px;
+  padding: 10px;
+  width: 32px; 
+}
+
+.open-button {
+  border-radius: 13px;
+  color: #8D8F92;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9em;
+  margin: 10px;
+  padding: 5px;
+  width: 80px;
+}
+
+.fa-circle {
+  padding-top: 2px;
+}
+
+.open-button:hover,
+.job-icons:hover {
+  background-color: #0BC7F2;
+  color: #FFF;
+}
+
+.fa-circle {
+  color: green;
+  font-size: 9px;
+  padding: 3px;
+}
+
+h1 {
+  color: #4e515d;
+  font-size: 1.8em;
+  margin-bottom: 7px;
+  margin-top: 46px;
+}
+
+.fa-map-pin {
+  padding: 6px;
+}
+
+h2 {
+  color: #8D8F92;
+  display: inline;
+  font-size: .8em;
+}
+
+.post-link {
+  color: #0BC7F2; 
+}
+
+.post-link:hover {
+  color: #4e515d;
+}
+
+
+/*Admin-Section Styling*/
+.admin-section {
+  background-color: #fff;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.admin {
+  border: transparent;
+  color: #8c95a4;
+  display: inline;
+  font-size: .75em;
+  font-weight: bold;
+  padding: 20px 30px;
+}
+
+.admin:hover {
+  border-bottom: 2px solid #0BC7F2;
+}
+
+
+/*Graphs Styling*/
+.graphs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 300px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 50px;
+}
+
+.single-chart {
+  justify-content: space-around;
+  margin-left: 40px;
+  width: 26%;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  animation: progress 1s ease-out forwards;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.teal .circle {
+  stroke: #67b8bf;
+}
+
+.circular-chart.blue .circle {
+  stroke: #48a3f3;
+}
+
+.circular-chart.purple .circle {
+  stroke: #a46eab;
+}
+
+.percentage {
+  fll: #666;
+  font-family: sans-serif;
+  font-size: .3em;
+  text-anchor: middle;
+} 
+
+.perc-text {
+  fill: #666;
+  font-size: .2em;
+  font-family: sans-serif;
+  text-anchor: middle;
+}
+
+div img {
+  height: 250px;
+  margin-left: 18px;
+  width: 460px;
+}
+
+.right-graph {
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+.graph-button {
+  border-radius: 18px;
+  color: #5b6677;
+  font-family: 'Roboto', sans-serif;
+  font-size: .7em;
+  height: 43px;
+  margin: 10px auto;
+  width: 158px;
+}
+
+
+/*Breakline Styling*/
+.break-line {
+  border: 1px solid #D4D6D8;
+  display: inline-block;
+  width: 48%;
+}
+
+.fa-chevron-circle-up {
+  color: #FFF;
+  font-size: 1.3em;
+}
+
+.break {
+  padding-left: 68px;
+  padding-top: 70px;
+  padding-right: 50px
+}
+
+
+/*Table Styling*/
+.job-table table { 
+  background-color: #FFF;
+  border-collapse: collapse; 
+  border-color: #A2A4A7;
+  margin-left: 50px;
+  margin-top: 60px;
+  text-align: left; 
+  width: 90%; 
+} 
+
+.job-table {
+  background-color: #ecf1f5; 
+  font-family: 'Roboto', sans-serif;
+  font-size: .60em; 
+  margin: 0px 0px 0px 20px;
+  overflow: hidden;
+}
+
+.job-table table td, 
+.job-table table th { 
+  padding: 26px 24px; 
+}
+
+.job-table table th {
+  padding-right: 75px;
+}
+
+.job-table table thead th {
+  background-color: #717d93; 
+  color:#FFF; 
+  font-size: 15px; 
+  font-weight: normal; 
+} 
+
+.edit-button {
+  background-color: #7e8ba4;
+  border-radius: 0%;
+  border: none;
+  color: #FFF;
+  font-size: .75em;
+  padding: 5px 10px;
+  width: 75px;
+}
+
+.edit-button:hover {
+  background-color: #7A7387;
+}
+
+.fa-pen-fancy {
+  padding: 3px;
+}
+
+.job-table table thead th:first-child { 
+  border: none; 
+  width: 209px;
+}
+
+.job-table table tbody td { 
+  border-bottom: 1px solid lightgray;
+  color: #717a89; 
+  font-size: 1.3em;
+  font-weight: bold; 
+}
+
+.job-table table tbody td:first-child { 
+  border-left: none; 
+}
+
+.job-table table tbody tr:last-child td { 
+  border-bottom: none; 
+}
+
+
+/*Bottom Styling*/
+.bottom {
+  background-color: #ecf1f5;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 100%;
+}
+
+.links {
+  margin-top: 30px;
+  margin-left: 66px;
+}
+
+.link-jobs {
+  border-bottom: 1px solid #D4D6D8;
+  padding-bottom: 25px;
+  padding-left: 0px;
+}
+
+.social-buttons {
+  color: #FFF;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9em;
+  margin: 10px;
+  padding-left: 0px;
+  padding: 10px;
+  position: relative;
+  width: 278px;
+}
+
+.Facebook {
+  background-color: #2254B8;
+}
+
+.Twitter {
+  background-color: #0BC7F2; 
+}
+
+.Linkedin {
+  background-color: #4E89AD;
+}
+
+.Facebook:hover {
+  background-color: #4066DC;
+}
+
+.Twitter:hover {
+  background-color: #08E6F9; 
+}
+
+.Linkedin:hover {
+  background-color: #48A6C2;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin {
+  font-size: 14px;
+  left: 18px;
+  margin-top: 2px;
+  position: absolute;
+}
+
+h3 {
+  color: #5b6677;
+  font-size: 1em;
+  margin: 10px 0px 15px 0px;
+}
+
+h6 {
+  color: #7b8392;
+  font-size: .75em;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.fa-globe-asia,
+.fa-calculator,
+.fa-telegram-plane {
+  font-size: 16px;
+  width: 20px;
+}
+
+.this-job,
+.budget-widget,
+.upload-resumes {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  margin: 30px;
+  width: 280px;
+}
+
+.input {
+  border: transparent;
+  font-size: .75em;
+  height: 36px;
+  width: 235px;
+}
+
+.copy {
+  background-color: #67b8bf;
+  border-color: transparent;
+  color: #FFF;
+  font-size: .75em;
+  height: 36px;
+  position: absolute;
+  width: 44px;
+}
+
+.copy:hover {
+  background-color: #35C7D1;
+}
+
+@media (max-width: 1295px) {
+
+.this-job, 
+.budget-widget, 
+.upload-resumes {
+  margin: 33px;
+}
+
+@media (max-width: 1175px) {
+
+.this-job, 
+.budget-widget, 
+.upload-resumes {
+  width: 230px;
+}
+
+.graphs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+div img {
+  height: 200px;
+  margin-left: 125px;
+  width: 400px;
+}
+
+.break-line {
+  width: 47%;
+}
+
+.break {
+    padding-left: 69px;
+    padding-right: 15px;
+}
+
+.links {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+}
+
+@media (max-width: 1075px) {
+
+.job-nav-buttons {
+  margin: 40px 10px;
+}
+    
+}
+.admin {
+  padding: 10px;
+}
+
+.graphs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.flex-wrapper {
+  margin-top: 60px;
+}
+
+.single-chart {
+  margin-left: 22px;
+}
+
+div img {
+  margin-left: 46px;
+}
+
+.right-graph {
+  margin-top: 12px;
+}
+
+.links {
+  margin-left: 0px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+}
+
+@media (max-width: 975px) {
+
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sidemenu {
+  display: none;
+}
+
+.fa-caret-left {
+  visibility: hidden;
+}
+
+.header-top {
+  margin-left: 30px;
+}
+
+.admin-section {
+  padding-left: 25px;
+  padding-bottom: 11px;
+}
+
+.break {
+    padding-left: 48px;
+    padding-right: 28px;
+}
+
+.job-table {
+  margin: 0px 0px 20px 20px;
+}
+}
+
+@media (max-width: 780px) {
+
+h1 {
+  font-size: 1.2em;
+}
+
+.admin {
+  padding: 5px;
+  font-size: .65em;
+}
+
+.graphs {
+  display: block;
+  height: 100%
+}
+
+.flex-wrapper {
+  margin-top: 38px;
+}
+
+.single-chart {
+  margin-left: 54px;
+  width: 24%;
+}
+
+div img {
+  margin-left: 148px;
+}
+
+.job-table table {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.job-table {
+  font-size: .5em; 
+}
+
+.job-table table tbody td {
+  line-height: 15px;
+}
+
+.social-buttons {
+  width: 200px;
+}
+
+.this-job, 
+.budget-widget, 
+.upload-resumes {
+  width: 200px;
+}
+
+.input {
+  width: 150px;
+}
+
+h6 {
+  font-size: 0.60em;
+}
+}
+
+@media (max-width: 630px) {
+
+
+}
+
+
+
+
+
