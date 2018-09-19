@@ -89,6 +89,7 @@ hr {
   border: .5px solid #11202B;
 }
 
+
 /*Main Section Styling*/
 .main {
   grid-area: main;
@@ -551,192 +552,395 @@ h6 {
   background-color: #35C7D1;
 }
 
-@media (max-width: 1295px) {
 
-.this-job, 
-.budget-widget, 
-.upload-resumes {
-  margin: 33px;
-}
+  @media (max-width: 1295px) {
 
-@media (max-width: 1175px) {
+  .this-job, 
+  .budget-widget, 
+  .upload-resumes {
+    margin: 33px;
+  }
 
-.this-job, 
-.budget-widget, 
-.upload-resumes {
-  width: 230px;
-}
 
-.graphs {
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
+  @media (max-width: 1175px) {
 
-div img {
-  height: 200px;
-  margin-left: 125px;
-  width: 400px;
-}
+  .this-job, 
+  .budget-widget, 
+  .upload-resumes {
+    width: 265px;
+  }
 
-.break-line {
-  width: 47%;
-}
+  .graphs {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
 
-.break {
+  .single-chart {
+    margin-left: 35px;
+    width: 25%;
+  }
+
+  div img {
+    height: 200px;
+    margin-left: 2px;
+    width: 365px;
+  }
+
+  .break-line {
+    width: 47%;
+  }
+
+  .break {
     padding-left: 69px;
+    padding-top: 30px;
     padding-right: 15px;
-}
+  }
 
-.links {
-  margin-top: 30px;
-  margin-left: 10px;
-}
-}
+  .links {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
 
-@media (max-width: 1075px) {
-
-.job-nav-buttons {
-  margin: 40px 10px;
-}
-    
-}
-.admin {
-  padding: 10px;
-}
-
-.graphs {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.flex-wrapper {
-  margin-top: 60px;
-}
-
-.single-chart {
-  margin-left: 22px;
-}
-
-div img {
-  margin-left: 46px;
-}
-
-.right-graph {
-  margin-top: 12px;
-}
-
-.links {
-  margin-left: 0px;
-}
-
-.bottom {
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
-}
-
-@media (max-width: 975px) {
+  .input {
+    width: 227px;
+  }
+  }
 
 
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  @media (max-width: 1075px) {
 
-.sidemenu {
-  display: none;
-}
+  .job-nav-buttons {
+    margin: 40px 10px;
+  }
+      
+  }
+  .admin {
+    padding: 10px;
+  }
 
-.fa-caret-left {
-  visibility: hidden;
-}
+  .admin-section {
+    padding-left: 35px;
+  }
 
-.header-top {
-  margin-left: 30px;
-}
+  .graphs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 
-.admin-section {
-  padding-left: 25px;
-  padding-bottom: 11px;
-}
+  .flex-wrapper {
+    margin-top: 60px;
+  }
 
-.break {
-    padding-left: 48px;
-    padding-right: 28px;
-}
+  .single-chart {
+    margin-left: 28px;
+  }
 
-.job-table {
-  margin: 0px 0px 20px 20px;
-}
-}
+  .circular-chart {
+    max-width: 100%;
+  }
 
-@media (max-width: 780px) {
+  div img {
+    margin-left: 46px;
+  }
 
-h1 {
-  font-size: 1.2em;
-}
+  .right-graph {
+    margin-top: 12px;
+  }
 
-.admin {
-  padding: 5px;
-  font-size: .65em;
-}
+  .links {
+    margin-left: 0px;
+  }
 
-.graphs {
-  display: block;
-  height: 100%
-}
-
-.flex-wrapper {
-  margin-top: 38px;
-}
-
-.single-chart {
-  margin-left: 54px;
-  width: 24%;
-}
-
-div img {
-  margin-left: 148px;
-}
-
-.job-table table {
-  margin-left: 20px;
-  width: 100%;
-}
-
-.job-table {
-  font-size: .5em; 
-}
-
-.job-table table tbody td {
-  line-height: 15px;
-}
-
-.social-buttons {
-  width: 200px;
-}
-
-.this-job, 
-.budget-widget, 
-.upload-resumes {
-  width: 200px;
-}
-
-.input {
-  width: 150px;
-}
-
-h6 {
-  font-size: 0.60em;
-}
-}
-
-@media (max-width: 630px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  }
 
 
-}
+  @media (max-width: 975px) {
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sidemenu {
+    display: none;
+  }
+
+  .fa-caret-left {
+    visibility: hidden;
+  }
+
+  .header-top {
+    margin-left: 30px;
+  }
+
+  .admin-section {
+    padding-left: 25px;
+    padding-bottom: 11px;
+  }
+
+  .break {
+      padding-left: 48px;
+      padding-right: 28px;
+  }
+
+  div img {
+    margin-left: 20px;
+  }
+
+  .job-table {
+    margin: 0px;
+  }
+
+  .social-buttons {
+    width: 256px;
+  }
+
+  .input {
+    width: 206px;
+  }
+  }
 
 
+  @media (max-width: 780px) {
 
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .admin {
+    padding: 5px;
+    font-size: .65em;
+  }
+
+  .graphs {
+    display: block;
+    height: 100%
+  }
+
+  .flex-wrapper {
+    margin-top: 38px;
+  }
+
+  .single-chart {
+    margin-left: 74px;
+    width: 20%;
+  }
+
+  div img {
+    margin-left: 203px;
+  }
+
+  .job-table table {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .job-table {
+    font-size: .5em; 
+  }
+
+  .job-table table tbody td {
+    line-height: 15px;
+  }
+
+  .links {
+      margin-left: 18px;
+  }
+
+  .social-buttons {
+    width: 200px;
+  }
+
+  .this-job, 
+  .budget-widget, 
+  .upload-resumes {
+    width: 200px;
+  }
+
+  .input {
+    width: 150px;
+  }
+
+  h6 {
+    font-size: 0.60em;
+  }
+  }
+
+
+  @media (max-width: 630px) {
+
+  .single-chart {
+    width: 24%;
+  }
+
+  div img {
+    margin-left: 135px;
+  }
+
+  .graph-button {
+    visibility: hidden;
+  }
+
+  .bottom {
+    display: block;
+    height: 100%;
+  }
+
+  .single-chart {
+    margin-left: 45px;
+  }
+
+  .circular-chart {
+    max-width: 90%;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .job-table {
+    width: 87%;
+    margin-left: 5%;
+  }
+
+  .job-table table {
+    margin-top: 0px;
+  }
+
+  .social-buttons {
+    width: 79%;
+  }
+
+  .this-job, 
+  .budget-widget, 
+  .upload-resumes {
+    width: 58%;
+  }
+
+  .input {
+    width: 79%;
+  }
+
+  .links {
+    margin-left: 26%;
+  }
+  }
+
+
+  @media (max-width: 550px) {
+
+  .search-input {
+    padding-top: 3px;
+    padding-left: 0px;
+    width: 271px;
+  }
+
+  .fa-search {
+    visibility: hidden;
+  }
+
+  .header-top {
+    margin-left: 21px;
+  }
+
+  .job-nav-buttons {
+    margin: 40px 16px;
+    font-size: 10px;
+  }
+
+  .job-icons {
+    font-size: 10px;
+    margin: 1px;
+  }
+
+  .open-button {
+    font-size: .8em;
+    margin: 0px;
+    width: 60px;
+  }
+
+  .admin-section {
+      padding-left: 13px;
+      padding-bottom: 5px;
+  }
+
+  .single-chart {
+    margin-left: 6%;
+  }
+
+  div img {
+    margin-left: 19%;
+  }
+
+  .job-table {
+      width: 85%;
+      margin-left: 6%;
+  }
+
+  .links {
+      margin-left: 22%;
+  }
+  }
+
+  @media (max-width: 450px) {
+
+  .search-input {
+    width: 142px;
+    font-size: .55em;
+  }
+
+  .nav-icons {
+    font-size: 1em;
+  }
+
+  .header-top {
+      display: inline-block;
+  }
+
+  h1 {
+    margin-top: 21px;
+  }
+
+  .job-nav-buttons {
+      margin: 10px 5px;
+  }
+
+  .admin-section {
+    display: none;
+  }
+
+  div img {
+    margin-left: 8%;
+  }
+
+  .this-job, 
+  .budget-widget, 
+  .upload-resumes {
+    width: 56%;
+  }
+
+  .input {
+    width: 77%;
+  }
+  }
+
+  @media (max-width: 320px) {
+
+  div img {
+    margin-left: 4%;
+  }
+
+  .job-table {
+    margin-left: 3%;
+  }
+
+  .links {
+    margin-left: 17%;
+  }
+  }
 
 
